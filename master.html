@@ -1,0 +1,1129 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+
+		.container {
+			position: absolute;
+			top: calc(50% - 170px);
+			left: calc(50% - 260px);
+			width: 520px;
+			height: 340px;
+		}
+
+		p {
+			position: absolute;
+			margin: 0;
+			font-size: 40px;
+			font-family: "Cute Font", cursive;
+			top: -60px;
+			right: 0;
+		}
+
+		.noodle {
+			position: relative;
+			top: calc(50% - 175px);
+			left: calc(50% - 355px);
+			width: 710px;
+			height: 350px;
+			transform: scale(0.7);
+		}
+
+		.noodle__vessel {
+			position: absolute;
+			top: 40px;
+			width: 420px;
+			height: 209px;
+			border-radius: 50%;
+			background-color: #3f51b5;
+			z-index: 10;
+		}
+
+		.noodle__vesselBottom {
+			position: absolute;
+			top: 190px;
+			left: 24px;
+			width: 379px;
+			height: 140px;
+			overflow: hidden;
+		}
+
+		.noodle__vesselBottom:before {
+			width: 405px;
+			height: 400px;
+			background-color: #3f51b5;
+			overflow: hidden;
+			border-radius: 0 50% 50%;
+			top: -275px;
+			left: -16px;
+			z-index: 10;
+		}
+
+		.noodle__vesselBottom:after {
+			width: 173px;
+			height: 70px;
+			background-color: #efefef;
+			overflow: hidden;
+			border-radius: 0 0 50% 50%;
+			bottom: 0;
+			left: 100px;
+		}
+
+		.menWrap {
+			position: absolute;
+			top: 0;
+			width: 420px;
+			height: 209px;
+			border-radius: 50%;
+			background-color: #3f51b5;
+			overflow: hidden;
+		}
+
+		.menWrap:before {
+			top: 47px;
+			left: 30px;
+			width: 360px;
+			height: 185px;
+			border-radius: 50%;
+			background-color: rgba(250, 200, 126, 0.918);
+		}
+
+		.men {
+			position: absolute;
+			top: 65px;
+			left: 30px;
+			width: 360px;
+			height: 204px;
+			border-radius: 50%;
+		}
+
+		.men__item {
+			position: absolute;
+			top: 30px;
+			left: 20px;
+			border-radius: 50%;
+			border: 4px solid #faea0e;
+			opacity: 0.8;
+		}
+
+		.men__item:before {
+			top: -10px;
+			left: 10px;
+			width: 157px;
+			height: 110px;
+			border-radius: 50%;
+			border-width: 4px;
+			border-style: solid;
+			opacity: 0.8;
+			border-color: #faea0e;
+			transform: rotateZ(10deg);
+		}
+
+		.men__item:after {
+			top: 1px;
+			left: 10px;
+			width: 136px;
+			height: 100px;
+			border-radius: 50%;
+			border-width: 4px;
+			border-style: solid;
+			opacity: 0.8;
+			border-color: #faea0e;
+			transform: rotateZ(-10deg);
+		}
+
+		.men__item:nth-of-type(1) {
+			width: 176px;
+			height: 176px;
+			top: 33px;
+			left: 172px;
+		}
+
+		.men__item:nth-of-type(2) {
+			width: 94px;
+			height: 79px;
+			top: 55px;
+			left: 8px;
+		}
+
+		.men__item:nth-of-type(3) {
+			width: 318px;
+			height: 182px;
+			top: 38px;
+			left: 45px;
+		}
+
+		.men__item:nth-of-type(4) {
+			width: 324px;
+			height: 125px;
+			top: 17px;
+			left: 12px;
+		}
+
+		.men__item:nth-of-type(5) {
+			width: 145px;
+			height: 73px;
+			top: 41px;
+			left: 80px;
+		}
+
+		.men__item:nth-of-type(6) {
+			width: 198px;
+			height: 80px;
+			top: 76px;
+			left: 37px;
+		}
+
+		.men__item:nth-of-type(7) {
+			width: 293px;
+			height: 55px;
+			top: 36px;
+			left: 48px;
+		}
+
+		.men__item:nth-of-type(8) {
+			width: 155px;
+			height: 100px;
+			top: 31px;
+			left: 180px;
+		}
+
+		.men__item:nth-of-type(9) {
+			width: 137px;
+			height: 23px;
+			top: 49px;
+			left: 160px;
+		}
+
+		.men__item:nth-of-type(10) {
+			width: 43px;
+			height: 177px;
+			top: 105px;
+			left: 16px;
+		}
+
+		.men__item:nth-of-type(11) {
+			width: 43px;
+			height: 69px;
+			top: 22px;
+			left: 146px;
+		}
+
+		.men__item:nth-of-type(12) {
+			width: 143px;
+			height: 113px;
+			top: 21px;
+			left: 13px;
+		}
+
+		.men__item:nth-of-type(13) {
+			width: 214px;
+			height: 68px;
+			top: 58px;
+			left: 96px;
+		}
+
+		.men__item:nth-of-type(14) {
+			width: 211px;
+			height: 161px;
+			top: 39px;
+			left: 108px;
+		}
+
+		.men__item:nth-of-type(15) {
+			width: 29px;
+			height: 50px;
+			top: 70px;
+			left: 180px;
+		}
+
+		.men__item:nth-of-type(16) {
+			width: 253px;
+			height: 74px;
+			top: 82px;
+			left: 128px;
+		}
+
+		.men__item:nth-of-type(17) {
+			width: 62px;
+			height: 51px;
+			top: 62px;
+			left: 49px;
+		}
+
+		.men__item:nth-of-type(18) {
+			width: 29px;
+			height: 50px;
+			top: 80px;
+			left: 135px;
+		}
+
+		.men__item:nth-of-type(19) {
+			width: 29px;
+			height: 50px;
+			top: 100px;
+			left: 230px;
+		}
+
+		.eggs {
+			position: absolute;
+			top: 35px;
+			left: 150px;
+			transform: scale(0.85);
+		}
+
+		.egg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 120px;
+			height: 95px;
+			border-radius: 50% 50% 40px 40px;
+			display: none;
+		}
+
+		.egg:nth-of-type(1) {
+			top: -15px;
+			left: 80px;
+		}
+
+		.egg:nth-of-type(2) {
+			top: -5px;
+			left: 40px;
+		}
+
+		.egg:before {
+			top: -10px;
+			left: 17px;
+			width: 83px;
+			height: 116px;
+			background-color: #efefef;
+			border-radius: 50% 50% 40px 40px;
+			transform: rotateZ(-70deg);
+		}
+
+		.egg:after {
+			position: absolute;
+			top: -20px;
+			left: 18px;
+			width: 83px;
+			height: 123px;
+			background-color: #ffffff;
+			border-radius: 50% 50% 40px 40px;
+			transform: rotateZ(-70deg);
+		}
+
+		.egg__inner {
+			position: absolute;
+			top: 9px;
+			left: 45px;
+			width: 62px;
+			height: 75px;
+			background-color: #faea0e;
+			border-radius: 50%;
+			transform: rotateZ(-70deg);
+		}
+
+		.egg__inner:before {
+			top: 4px;
+			left: 5px;
+			width: 55px;
+			height: 68px;
+			background-color: #ffbb01;
+			border-radius: 50%;
+		}
+
+		.egg__inner:after {
+			top: 35px;
+			left: 8px;
+			width: 8px;
+			height: 22px;
+			background-color: #fff;
+			border-radius: 90% 10px 10px 90%;
+			transform: rotateZ(-13deg);
+		}
+
+		.egg--toggle {
+			position: absolute;
+			opacity: 0.5;
+			display: block;
+			width: 100px;
+			height: 100px;
+			top: 0;
+			left: -16px;
+			transform: scale(0.8);
+		}
+
+		.egg--toggle:nth-of-type(1) {
+			top: -100px;
+			left: 300px;
+		}
+
+		.egg--toggle:nth-of-type(2) {
+			top: -100px;
+			left: 420px;
+		}
+
+		.egg--toggle:nth-of-type(3) {
+			top: -100px;
+			left: 545px;
+		}
+
+		.meats {
+			position: absolute;
+			top: 95px;
+			left: 245px;
+			transform: scale(0.85);
+		}
+
+		.meat {
+			position: absolute;
+			top: 5px;
+			left: -15px;
+			width: 114px;
+			height: 116px;
+			background-color: #ddaf73;
+			border-radius: 50% 40% 40px 40px;
+			border-width: 3px 6px 8px 3px;
+			border-style: solid;
+			border-color: #992525;
+			overflow: hidden;
+			display: none;
+			-ms-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+			transform: rotateZ(20deg);
+		}
+
+		.meat:nth-of-type(1) {
+			left: 28px;
+			top: -15px;
+		}
+
+		.meat:nth-of-type(2) {
+			left: 8px;
+			top: -10px;
+		}
+
+		.meat:before {
+			top: 23px;
+			left: 6px;
+			width: 114px;
+			height: 116px;
+			background-color: #f3d9a9;
+			border-radius: 48% 36% 0 0;
+			border-width: 18px 10px 21px 17px;
+			border-style: solid;
+			border-color: #f7e1c4;
+			-ms-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.meat--toggle {
+			position: absolute;
+			opacity: 0.5;
+			display: block;
+			transform: scale(0.7);
+		}
+
+		.meat--toggle:nth-of-type(1) {
+			top: -50px;
+			left: 200px;
+		}
+
+		.meat--toggle:nth-of-type(2) {
+			top: -50px;
+			left: 320px;
+		}
+
+		.meat--toggle:nth-of-type(3) {
+			top: -50px;
+			left: 445px;
+		}
+
+		.meat__inner {
+			position: absolute;
+			top: 44px;
+			left: 55px;
+			width: 52px;
+			height: 60px;
+		}
+
+		.meat__inner:before {
+			top: 12px;
+			left: 34px;
+			width: 5px;
+			height: 25px;
+			background-color: #992525;
+			border-radius: 20%;
+		}
+
+		.meat__inner:after {
+			top: 20px;
+			left: 25 px;
+			width: 5px;
+			height: 25px;
+			background-color: #992525;
+			border-radius: 20%;
+		}
+
+		.negiWrap {
+			position: absolute;
+			top: 45px;
+			left: 25px;
+		}
+
+		.negi {
+			position: absolute;
+			top: 53px;
+			left: 57px;
+			display: none;
+		}
+
+		.negi--two {
+			left: 40px;
+			top: 68px;
+		}
+
+		.negi--three {
+			left: 20px;
+			top: 62px;
+		}
+
+		.negi--toggle {
+			position: absolute;
+			opacity: 0.5;
+			display: block;
+			transform: scale(0.7);
+		}
+
+		.negi--toggle:nth-of-type(1) {
+			top: 130px;
+			left: 400px;
+		}
+
+		.negi--toggle:nth-of-type(2) {
+			top: 130px;
+			left: 505px;
+		}
+
+		.negi--toggle:nth-of-type(3) {
+			top: 130px;
+			left: 610px;
+		}
+
+		.negi__item {
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			border-width: 2px 4px 4px 4px;
+			border-style: solid;
+			opacity: 0.8;
+			border-color: #fff;
+		}
+
+		.negi__item:before {
+			top: 0;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			border-width: 2px 4px 4px 4px;
+			border-style: solid;
+			border-color: #06aa06;
+			opacity: 0.8;
+		}
+
+		.negi__item:after {
+			top: 20px;
+			left: 20px;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			border-width: 2px 4px 4px 4px;
+			border-style: solid;
+			opacity: 0.8;
+			border-color: #077a07;
+		}
+
+		.negi__item:nth-of-type(1) {
+			top: 50px;
+			left: 37px;
+		}
+
+		.negi__item:nth-of-type(2) {
+			top: 25px;
+			left: 0;
+		}
+
+		.negi__item:nth-of-type(3) {
+			top: 25px;
+			left: 30px;
+		}
+
+		.negi__item:nth-of-type(4) {
+			top: 25px;
+			left: 40px;
+		}
+
+		.negi__item:nth-of-type(5) {
+			top: 25px;
+			left: 50px;
+		}
+
+		.negi__item:nth-of-type(6) {
+			top: 15px;
+			left: 2px;
+		}
+
+		.negi__item:nth-of-type(7) {
+			top: 25px;
+			left: 2px;
+		}
+
+		.negi__item:nth-of-type(8) {
+			top: -15px;
+			left: 40px;
+		}
+
+		.negi__item:nth-of-type(9) {
+			top: -15px;
+			left: 30px;
+		}
+
+		.negi__item:nth-of-type(10) {
+			top: -10px;
+			left: 20px;
+		}
+
+		.negi__item:nth-of-type(11) {
+			top: 20px;
+			left: 60px;
+		}
+
+		.negi__item:nth-of-type(12) {
+			top: 33px;
+			left: 0;
+		}
+
+		.negi__item:nth-of-type(13) {
+			top: 33px;
+			left: -12px;
+		}
+
+		.negi__item:nth-of-type(14) {
+			top: -13px;
+			left: 52px;
+		}
+
+		.negi__item:nth-of-type(15) {
+			top: -13px;
+			left: -12px;
+		}
+
+		.negi__item:nth-of-type(16) {
+			top: -4px;
+			left: 10px;
+		}
+
+		.negi__item:nth-of-type(17) {
+			top: -4px;
+			left: -12px;
+		}
+
+		.leaf {
+			position: absolute;
+			top: 144px;
+			left: 168px;
+		}
+
+		.leaf__item {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 59px;
+			width: 20px;
+			border-radius: 50%;
+			background: #4ea24e;
+			background: #8a8a8a;
+			transform: rotate(35deg);
+		}
+
+		.leaf__item:after {
+			height: 43px;
+			width: 2px;
+			background-color: #348b34;
+			background: #727272;
+			left: 50%;
+			margin-left: -1px;
+			top: 5px;
+		}
+
+		.leaf__item:nth-of-type(1) {
+			top: 0;
+			left: 0;
+		}
+
+		.leaf__item:nth-of-type(2) {
+			top: -23px;
+			left: 10px;
+			width: 20px;
+			height: 120px;
+			transform: rotate(-76deg);
+		}
+
+		.leaf__item:nth-of-type(2):after {
+			height: 100px;
+		}
+
+		.leaf__item:nth-of-type(3) {
+			top: 0px;
+			left: 14px;
+			height: 82px;
+			transform: rotate(68deg);
+		}
+
+		.leaf__item:nth-of-type(4) {
+			top: 10px;
+			left: 10px;
+		}
+
+		.noris {
+			position: absolute;
+			top: -46px;
+			left: 48px;
+		}
+
+		.nori {
+			position: absolute;
+			top: 48px;
+			left: -9px;
+			width: 60px;
+			height: 100px;
+			display: none;
+		}
+
+		.nori--two {
+			top: 48px;
+			left: 28px;
+			width: 60px;
+			height: 100px;
+			transform: skew(10deg, -10deg);
+		}
+
+		.nori--three {
+			top: 50px;
+			left: 50px;
+			width: 60px;
+			height: 100px;
+		}
+
+		.nori__item {
+			position: absolute;
+			width: 60px;
+			height: 102px;
+			background-color: #222121;
+			transform: skew(20deg, -20deg);
+		}
+
+		.nori--toggle {
+			top: 295px;
+			position: absolute;
+			opacity: 0.5;
+			display: block;
+			transform: scale(0.7);
+		}
+
+		.nori--toggle:nth-of-type(1) {
+			left: 387px;
+		}
+
+		.nori--toggle:nth-of-type(2) {
+			left: 492px;
+		}
+
+		.nori--toggle:nth-of-type(3) {
+			left: 597px;
+		}
+
+		.toggle {
+			top: -100px;
+			position: absolute;
+			opacity: 0;
+		}
+
+		.label {
+			top: -100px;
+			display: inline-flex;
+		}
+
+		#egg1:checked+label {
+			opacity: 1;
+		}
+
+		#egg1:checked+label+input+label+input+label+.egg+.egg {
+			display: block;
+		}
+
+		#egg1:checked+input+label+label {
+			opacity: 0.5;
+		}
+
+		#egg2:checked+label+input+label+.egg+.egg+.egg {
+			display: block;
+		}
+
+		#egg2:checked+label {
+			opacity: 1;
+		}
+
+		#egg3:checked+label+.egg {
+			display: block;
+		}
+
+		#egg3:checked+label {
+			opacity: 1;
+		}
+
+		#meat1:checked+label+input+label+input+label+.meat+.meat+.meat {
+			display: block;
+		}
+
+		#meat1:checked+label {
+			opacity: 1;
+		}
+
+		#meat2:checked+label+input+label+.meat+.meat {
+			display: block;
+		}
+
+		#meat2:checked+label {
+			opacity: 1;
+		}
+
+		#meat3:checked+label+.meat {
+			display: block;
+		}
+
+		#meat3:checked+label {
+			opacity: 1;
+		}
+
+		#negi1:checked+label+input+label+input+label+.negi+.negi+.negi {
+			display: block;
+		}
+
+		#negi1:checked+label {
+			opacity: 0;
+		}
+
+		#negi2:checked+label+input+label+.negi+.negi {
+			display: block;
+		}
+
+		#negi2+label {
+			opacity: 0;
+		}
+
+		#negi3:checked+label+.negi {
+			display: block;
+		}
+
+		#negi3+label {
+			opacity: 0;
+		}
+
+		#nori1:checked+label+input+label+input+label+.nori+.nori+.nori {
+			display: block;
+		}
+
+		#nori1:checked+label {
+			opacity: 1;
+		}
+
+		#nori2:checked+label+input+label+.nori+.nori {
+			display: block;
+		}
+
+		#nori2:checked+label {
+			opacity: 1;
+		}
+
+		#nori3:checked+label+.nori {
+			display: block;
+		}
+
+		#nori3:checked+label {
+			opacity: 1;
+		}
+
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+
+		html {
+			overflow: hidden;
+		}
+
+		body {
+			position: relative;
+			overflow: scroll;
+			margin: 0;
+			/* background-color: rgba(119, 81, 46, 0.705); */
+			background-image: url(https://images.wallpaperscraft.com/image/single/eggs_minimalism_food_69256_2560x1440.jpg);
+			font-family: "Cute Font", cursive;
+		}
+
+		* {
+			z-index: 1;
+		}
+
+		*:before,
+		*:after {
+			position: absolute;
+			content: "";
+		}
+	</style>
+
+	<script>
+		window.console = window.console || function (t) { };
+	</script>
+
+
+
+</head>
+
+<body translate="no">
+	<div class="container">
+		<div class="noodle">
+			<!-- <p>Select topping</p> -->
+			<div class="noodle__vessel">
+				<div class="menWrap">
+					<div class="men">
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+						<div class="men__item"></div>
+					</div>
+				</div>
+				<!-- <div class="eggs">
+					<input class="toggle" type="checkbox" id="egg1" checked="checked">
+					<label class="lebel egg egg--toggle" for="egg1">
+						<div class="egg__inner"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="egg2">
+					<label class="lebel egg egg--toggle" for="egg2">
+						<div class="egg__inner"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="egg3">
+					<label class="lebel egg egg--toggle" for="egg3">
+						<div class="egg__inner"></div>
+					</label>
+					<div class="egg">
+						<div class="egg__inner"></div>
+					</div>
+					<div class="egg">
+						<div class="egg__inner"></div>
+					</div>
+					<div class="egg">
+						<div class="egg__inner"></div>
+					</div>
+				</div> -->
+				<div class="meats">
+					<input class="toggle" type="checkbox" id="meat1" checked="checked">
+					<label class="lebel meat meat--toggle" for="meat1"style="display: none;">
+						<div class="meat__inner"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="meat2">
+					<label class="lebel meat meat--toggle" for="meat2"style="display: none;">
+						<div class="meat__inner"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="meat3">
+					<label class="lebel meat meat--toggle" for="meat3" style="display: none;">
+						<div class="meat__inner"></div>
+					</label>
+					<div class="meat">
+						<div class="meat__inner"></div>
+					</div>
+					<div class="meat">
+						<div class="meat__inner"></div>
+					</div>
+					<div class="meat">
+						<div class="meat__inner"></div>
+					</div>
+				</div>
+				<div class="leaf">
+					<div class="leaf__item"></div>
+					<div class="leaf__item"></div>
+					<div class="leaf__item"></div>
+					<div class="leaf__item"></div>
+				</div>
+				<!-- <div class="noris">
+					<input class="toggle" type="checkbox" id="nori1" checked="checked">
+					<label class="lebel nori nori--toggle" for="nori1">
+						<div class="nori__item"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="nori2" checked="checked">
+					<label class="lebel nori nori--toggle" for="nori2">
+						<div class="nori__item"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="nori3" checked="checked">
+					<label class="lebel nori nori--toggle" for="nori3">
+						<div class="nori__item"></div>
+					</label>
+					<div class="nori">
+						<div class="nori__item"></div>
+					</div>
+					<div class="nori nori--two">
+						<div class="nori__item"></div>
+					</div>
+					<div class="nori nori--three">
+						<div class="nori__item"></div>
+					</div>
+				</div> -->
+				<div class="negiWrap">
+					<input class="toggle" type="checkbox" id="negi1" checked="checked">
+					<label class="lebel negi negi--toggle" for="negi1">
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="negi2">
+					<label class="lebel negi negi--toggle" for="negi2">
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+					</label>
+					<input class="toggle" type="checkbox" id="negi3">
+					<label class="lebel negi negi--toggle" for="negi3">
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+					</label>
+					<div class="negi">
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+					</div>
+					<div class="negi negi--two">
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+					</div>
+					<div class="negi negi--three">
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+						<div class="negi__item"></div>
+					</div>
+				</div>
+			</div>
+			<div class="noodle__vesselBottom"></div>
+		</div>
+	</div>
+</body>
+
+</html>
